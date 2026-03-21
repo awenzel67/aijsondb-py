@@ -1,6 +1,6 @@
-# Python bindings for dominodb
+# Python bindings for aijsondb
 
-The idea behind dominodb is rather simple:
+The idea behind aijsondb is rather simple:
 
 * Use a single json data file as data source.
 * Declare the content of json data with json schema.
@@ -8,35 +8,39 @@ The idea behind dominodb is rather simple:
 
 Writing a JavaScript expression to query a json data is not very convenient for humans. On the other hand letting an LLM creating the JavaScript expression using the json schema works well.
 
-Thus using dominodb in an agentic workflow is a good option to "talk with data".
+Thus using aijsondb in an agentic workflow is a good option to "talk with data".
 
-Python package dominodb is only a wrapper for the [dominodb](https://github.com/awenzel67/dominodb) library.
+Python package aijsondb is only a wrapper for the [aijsondb](https://github.com/awenzel67/aijsondb) library.
 
 ## Installation
 
-dominodb is available for Linux and Windows.
+aijsondb is available for Linux and Windows.
 
 **Supported Python versions:** Python 3.7 and above are recommended.
 
 ```
-pip install dominodb
+pip install aijsondb
 ```
 
 ## Usage
 
 Import the package.
 
+```
+import aijsondb
+```
+
 Load and validate the json data into an in memory data structure.
 
 ```
-dominodb.init_db(path_data, path_schema)
+path_data="data/500 KB_V2.json"
 path_schema="data/employeeSchemaDescription_V2.json"
-dominodb.init_db(path_data,path_schema)
+aijsondb.init_db(path_data,path_schema)
 ```
 
 Now you can query the data.
 ```
-res=dominodb.query_data_javascript("var result=data.employees.length;")
+res=aijsondb.query_data_javascript("var result=data.employees.length;")
 print(res)
 ```
 By convention the root json object is accessible as `data` in the query. Also, the result of the query must be stored in the variable `result`.
