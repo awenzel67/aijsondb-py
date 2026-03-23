@@ -49,4 +49,12 @@ The return value is a JSON string containing the result.
 
 Sample data are available on [aijsondb](https://github.com/awenzel67/aijsondb).
 
-Python script test_agent.py shows you how to create an langchain agent to talk with your JSON data in python using the aijsonpy package. 
+Python script test_agent.py shows you how to create an langchain agent to talk with your JSON data in python using the aijsonpy package.
+
+## Sample json data
+
+The file 500_KB_V2.json in the data folder is derived from the dataset "Employees { 10 } Level Nested Formatted Versions", specifically the "500 KB 10 Level Formatted" variant available at [page](https://sample.json-format.com/).
+
+The files test.json and 500_KB_V2Err.json are also based on this dataset.
+
+The JSON schema employeeSchemaDescription_V2.json was automatically generated from 500_KB_V2.json and subsequently edited by hand.
