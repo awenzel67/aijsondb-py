@@ -19,7 +19,7 @@ aijsondb is available for Linux and Windows.
 **Supported Python versions:** Python 3.7 and above are recommended.
 
 ```
-pip install aijsondb
+pip install aijsondbpy
 ```
 
 ## Usage
@@ -46,3 +46,7 @@ print(res)
 By convention the root json object is accessible as `data` in the query. Also, the result of the query must be stored in the variable `result`.
 
 The return value is a JSON string containing the result.
+
+Sample data are available on [aijsondb](https://github.com/awenzel67/aijsondb).
+
+Python script test_agent.py shows you how to create an langchain agent to talk with your JSON data in python using the aijsonpy package. 

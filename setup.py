@@ -1,9 +1,16 @@
 from setuptools import setup, find_packages
+# read the contents of your README file
+from pathlib import Path
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
-name='aijsondb', # Package name
-version='0.4.0', # Version number
+name='aijsondbpy', # Package name
+version='0.7.0', # Version number
 description='Python wrapper for aijsondb', # Short description
+long_description=long_description,
+long_description_content_type='text/markdown',
 author='Andreas Wenzel',
 author_email='awenzel67@gmail.com',
 url='https://github.com/awenzel67/aijsondb-py',
@@ -17,7 +24,8 @@ install_requires=[], # List dependencies here (e.g., ['numpy'])
 classifiers=[
 'Programming Language :: Python :: 3',
 'License :: OSI Approved :: MIT License',
-'Operating System :: Linux :: Windows',
+'Operating System :: Microsoft :: Windows',
+'Operating System :: POSIX',
 ],
 python_requires='>=3.6', # Minimum Python version
 )
