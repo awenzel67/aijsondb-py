@@ -17,7 +17,7 @@ url='https://github.com/awenzel67/aijsondb-py',
 packages=find_packages(), # Automatically find sub-packages
 include_package_data=True,  # Needed for MANIFEST.in
     package_data={
-        "aijsondb": ["libaijsondbc.so", "aijsondbc.dll"],  # Include the shared library
+        "aijsondb": ["libaijsondbc.so", "aijsondbc.dll","libaijsondbc.so"],  # Include the shared library
     },
 zip_safe=False,
 install_requires=[], # List dependencies here (e.g., ['numpy'])

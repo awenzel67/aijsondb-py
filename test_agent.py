@@ -13,7 +13,7 @@ with open(path_schema) as f:
     jschema = json.load(f) 
 
 
-def query_json_javascript(query: str) -> list[any]:
+def query_json_javascript(query: str) -> any:
     """Run a javascript expression on the provided data."""
     try:
         matches=aijsondb.query_data_javascript(query)

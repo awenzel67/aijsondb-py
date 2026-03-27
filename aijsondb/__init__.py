@@ -9,6 +9,8 @@ if system == "Windows":
     libaijsondb=ctypes.WinDLL(path + '/aijsondbc.dll')
 elif system=="Linux":
     libaijsondb=ctypes.CDLL(path + '/libaijsondbc.so')
+elif system=="Darwin":
+    libaijsondb=ctypes.CDLL(path + '/libaijsondbc.dylib')
 else:
     raise Exception("Unsupported platform")
 
