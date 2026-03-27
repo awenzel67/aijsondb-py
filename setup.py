@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
 name='aijsondbpy', # Package name
-version='0.7.0', # Version number
+version='0.9.0', # Version number
 description='Python wrapper for aijsondb', # Short description
 long_description=long_description,
 long_description_content_type='text/markdown',
@@ -26,6 +26,7 @@ classifiers=[
 'License :: OSI Approved :: MIT License',
 'Operating System :: Microsoft :: Windows',
 'Operating System :: POSIX',
+'Operating System :: MacOS'
 ],
 python_requires='>=3.6', # Minimum Python version
 )
