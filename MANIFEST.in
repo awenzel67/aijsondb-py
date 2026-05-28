@@ -1,1 +1,1 @@
-recursive-include dominodb *.so *.dll *.dylib
+recursive-include aijsondb *.so *.dll *.dylib

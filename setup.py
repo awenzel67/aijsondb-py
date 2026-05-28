@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
 name='aijsondbpy', # Package name
-version='0.9.0', # Version number
+version='0.11.0', # Version number
 description='Python wrapper for aijsondb', # Short description
 long_description=long_description,
 long_description_content_type='text/markdown',
@@ -17,7 +17,7 @@ url='https://github.com/awenzel67/aijsondb-py',
 packages=find_packages(), # Automatically find sub-packages
 include_package_data=True,  # Needed for MANIFEST.in
     package_data={
-        "aijsondb": ["libaijsondbc.so", "aijsondbc.dll","libaijsondbc.so"],  # Include the shared library
+        "aijsondb": ["libaijsondbc.so", "aijsondbc.dll","libaijsondbc.dylib"],  # Include the shared library
     },
 zip_safe=False,
 install_requires=[], # List dependencies here (e.g., ['numpy'])
